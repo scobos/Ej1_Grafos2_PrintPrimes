@@ -23,5 +23,11 @@ public class PrintPrimesTest {
 		PrintPrimes.main(new String[] {"1"}); //Necesito pasarle a PrintPrimes un 1
 		assertEquals("Prime: 2\n", outContent.toString());
 	}
+	
+	@Test
+	public void testApartado7() {
+		PrintPrimes.main(new String[] {"4"}); //Si le paso 4 sera 2, 3, 5 , 7
+		assertEquals("Prime: 2\nPrime: 3\nPrime: 5\nPrime: 7\n", outContent.toString());
+	}
 
 }
